@@ -677,7 +677,7 @@ function main() {
         var eforig = /BIG|REG/.test(lot) ? 'BIG' : orig;
         var effect = getEffect[orig]&&getEffect[orig]();
         console.log(orig)
-        if(!kokutid&&bonusflag&&!rand(2)&&!effect&&(/(BIG|REG)/.test(orig))){kokuti = true}
+        if(!kokutid&&bonusflag&&!rand(2)&&!orig){kokuti = true}
         if(!effect){
             if(kokuti){
                 $('#ebiwrap').addClass('display');
